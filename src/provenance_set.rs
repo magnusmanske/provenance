@@ -19,9 +19,8 @@ impl ProvenanceSet {
         self.events.push(event);
     }
 
-    pub fn add_reference(mut self, reference: Reference) -> Self {
+    pub fn add_reference(&mut self, reference: Reference) {
         self.references.push(reference);
-        self
     }
 
     pub fn sort(&mut self) {

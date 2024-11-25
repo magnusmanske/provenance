@@ -1,4 +1,4 @@
-use crate::{event::EventKind, Event, ProvenanceSet};
+use crate::{event::EventKind, Event, ProvenanceSet, Reference};
 use anyhow::Result;
 use lazy_static::lazy_static;
 use regex::Regex;
@@ -8,8 +8,9 @@ use scraper::{Html, Selector};
 pub struct Christies {}
 
 impl Christies {
-    pub fn from_html(html: &str) -> Result<ProvenanceSet> {
-        let mut ret = ProvenanceSet::default();
+    pub fn from_html(html: &str, id: &str) -> Result<ProvenanceSet> {
+        let mut ret =
+            ProvenanceSet::default().with_source(crate::Identifier::Christies(id.to_string()));
         let document = Html::parse_document(html);
 
         let selector_accordion_item = Selector::parse("chr-accordion-item").unwrap();
@@ -34,6 +35,8 @@ impl Christies {
                 Self::parse_event_section(content, &mut ret);
             } else if header == "Exhibited" {
                 Self::parse_exhibition_section(content, &mut ret);
+            } else if header == "Literature" {
+                Self::parse_literature_section(content, &mut ret);
             }
         }
         ret.sort();
@@ -80,6 +83,15 @@ impl Christies {
             ret.add_event(event);
         }
     }
+
+    fn parse_literature_section(content: String, ret: &mut ProvenanceSet) {
+        let parts = content.split("<br>").collect::<Vec<&str>>();
+        for part in parts {
+            let part = part.trim();
+            let reference = Reference::from_html(part);
+            ret.add_reference(reference);
+        }
+    }
 }
 
 #[cfg(test)]
@@ -88,8 +100,9 @@ mod tests {
 
     #[test]
     fn test_christies_from_html() {
+        // https://www.wikidata.org/wiki/Q102477248
         let html = include_str!("../test_files/lot-6350105");
-        let res = Christies::from_html(html).unwrap();
+        let res = Christies::from_html(html, "6350105").unwrap();
         println!("{res:#?}");
     }
 }
