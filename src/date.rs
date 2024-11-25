@@ -74,10 +74,45 @@ impl PartialOrd for Date {
     }
 }
 
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-//     #[test]
-//     fn test_comparison() {}
-// }
+    #[test]
+    fn test_date_from_text() {
+        assert_eq!(
+            Date::from_text("12 January 2020"),
+            Some(Date::Day(NaiveDate::from_ymd_opt(2020, 1, 12).unwrap()))
+        );
+        assert_eq!(
+            Date::from_text("January 2020"),
+            Some(Date::Month {
+                month: 1,
+                year: 2020
+            })
+        );
+        assert_eq!(Date::from_text("2020"), Some(Date::Year(2020)));
+    }
+
+    #[test]
+    fn test_date_display() {
+        assert_eq!(
+            format!(
+                "{}",
+                Date::Day(NaiveDate::from_ymd_opt(2020, 1, 12).unwrap())
+            ),
+            "2020-01-12"
+        );
+        assert_eq!(
+            format!(
+                "{}",
+                Date::Month {
+                    month: 1,
+                    year: 2020
+                }
+            ),
+            "1/2020"
+        );
+        assert_eq!(format!("{}", Date::Year(2020)), "2020");
+    }
+}

@@ -49,3 +49,14 @@ impl Location {
             .collect()
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_load_locations() {
+        let cities = Location::load_locations();
+        assert!(cities.iter().any(|x| x.1 == "New York City"));
+    }
+}
