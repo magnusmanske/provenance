@@ -33,3 +33,29 @@ impl IdText {
         self.text.as_deref()
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_id_text() {
+        let id_text = IdText::new_both("text", &Identifier::Christies("id".to_string()));
+        assert_eq!(id_text.text(), Some("text"));
+    }
+
+    #[test]
+    fn test_id_text_no_id() {
+        let id_text = IdText::new_text("text");
+        assert_eq!(id_text.text(), Some("text"));
+    }
+
+    #[test]
+    fn test_id_text_no_text() {
+        let id_text = IdText {
+            id: Some(Identifier::Christies("id".to_string())),
+            text: None,
+        };
+        assert_eq!(id_text.text(), None);
+    }
+}
