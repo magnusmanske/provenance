@@ -26,4 +26,16 @@ impl ProvenanceSet {
     pub fn sort(&mut self) {
         self.events.sort();
     }
+
+    pub fn source(&self) -> Option<&Identifier> {
+        self.source.as_ref()
+    }
+
+    pub fn events(&self) -> &[Event] {
+        &self.events
+    }
+
+    pub fn references(&self) -> &[Reference] {
+        &self.references
+    }
 }

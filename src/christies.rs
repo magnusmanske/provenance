@@ -96,6 +96,8 @@ impl Christies {
 
 #[cfg(test)]
 mod tests {
+    use crate::Identifier;
+
     use super::*;
 
     #[test]
@@ -103,6 +105,11 @@ mod tests {
         // https://www.wikidata.org/wiki/Q102477248
         let html = include_str!("../test_files/lot-6350105");
         let res = Christies::from_html(html, "6350105").unwrap();
-        println!("{res:#?}");
+        assert_eq!(
+            res.source(),
+            Some(&Identifier::Christies("6350105".to_string()))
+        );
+        assert_eq!(res.events().len(), 12);
+        assert_eq!(res.references().len(), 6);
     }
 }
