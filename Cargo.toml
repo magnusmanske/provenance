@@ -1,0 +1,16 @@
+[package]
+name = "provenance"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+scraper = "*"
+chrono = { version = "*", features = ["serde"] }
+regex = "*"
+lazy_static = "*"
+regex-split = "*"
+csv = "*"
+rayon = "*"

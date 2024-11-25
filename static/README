@@ -1,0 +1,11 @@
+How to create cities.tsv
+
+select DISTINCT ?qLabel ?q { VALUES ?type {wd:Q1549591 wd:Q200250 wd:Q133442 wd:Q515 wd:Q200250 wd:Q174844 wd:Q1093829} . ?q wdt:P31 ?type . SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". } }
+
+
+concat, remove entity URL part, sort, unique, reverse, remove "Qxxx" labels
+
+add header "label	qid"
+
+append:
+New York	Q60

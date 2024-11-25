@@ -1,0 +1,1059 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    
+
+
+<script type="text/plain" class="optanon-category-2">
+        
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "HEAD", "https://js.monitor.azure.com/scripts/b/ai.2.min.js", false );
+        xmlHttp.onload = function() {
+            if (xmlHttp.status == 200) {
+
+                
+                !function (T, l, y) { var S = T.location, k = "script", D = "instrumentationKey", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+                    src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", crossOrigin: "anonymous",
+                    onInit: function (sdk) {
+                        sdk.addTelemetryInitializer(function (envelope) {
+                            if (envelope.baseType == "RemoteDependencyData")
+                            {
+                                var excludedDomains = ["cdn.cookielaw.org","o2.mouseflow.com","s.acquire.io","app.acquire.io","seg.mmtro.com","christiesinc.tt.omtrdc.net","dpm.demdex.net","smetrics.christies.com","ct.pinterest.com","www.google-analytics.com"];
+
+                                for (let i = 0; i < excludedDomains.length; i++)
+                                {
+                                    if (envelope.baseData.target.includes(excludedDomains[i]))
+                                    {
+                                        return false;
+                                    }
+                                }
+                            }
+
+                            return true;
+                        });
+                    },
+                    cfg: {
+                        instrumentationKey: "5c229b10-0be6-42b4-bfbf-0babaf38d0ac",
+                        disableFetchTracking: false,
+                        disablePageUnloadEvents: ["unload"]
+                    }
+                });
+                
+            }
+        }
+
+        try{
+            xmlHttp.send( null );
+        } catch (error) {
+            // ignore: user is blocking scripts, what else can we do?
+        }
+
+</script>
+
+
+    <script>
+        window.chrGlobal = {"ismobileapp":false,"language":"en","analytics_env":"christiesprod","analytics_region_tag":"data-track","analytics_debug":false,"is_authenticated":false,"analytics_datalayer":true,"share":{"client_id":"ra-5fc8ecd336145103","items":[{"type":"email","label_txt":"Email","analytics_id":"live_socialshare_email","aria_share_title_txt":"Share via Email"}]},"labels":{"close_modal_txt":"Close modal window"},"access_token_expiration":"0"};
+    </script>
+
+
+
+
+    <title>DOM&#201;NIKOS THEOTOK&#211;POULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO), Portrait of a gentleman, half-length, in black, his right hand resting on a book | Christie&#39;s</title>
+
+    <meta name="description" content="Portrait of a gentleman, half-length, in black, his right hand resting on a book" />
+
+    <meta name="keywords" content="Christie’s, Live Auction, Auction, Lot" />
+
+    <link rel="canonical" href="https://www.christies.com/en/lot/lot-6350105" />
+
+    <meta name="robots" content="all" />
+
+    <meta name="christies-ctx-item" content="{DB47C573-0E0A-4C5F-A264-DB8584B23DD7}" />
+
+
+
+
+    <meta name="og:title" content="DOM&#201;NIKOS THEOTOK&#211;POULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO), Portrait of a gentleman, half-length, in black, his right hand resting on a book | Christie&#39;s" />
+
+    <meta name="og:description" content="Portrait of a gentleman, half-length, in black, his right hand resting on a book" />
+
+    <meta name="og:image" content="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max" />
+
+    <meta name="og:type" content="website" />
+
+    <meta name="og:url" content="https://www.christies.com/lot/lot-6350105" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no">
+
+<link href="https://dsl.assets.christies.com/design-system-library/production/critical.min.css" rel="preload stylesheet" as="style" fetchpriority="high" />
+<link href="https://dsl.assets.christies.com/design-system-library/production/atlas.min.css" rel="preload stylesheet" as="style" fetchpriority="high" />
+<link href="https://dsl.assets.christies.com/design-system-library/production/bembo.min.css" rel="preload stylesheet" as="style" fetchpriority="high" />
+<link href="https://dsl.assets.christies.com/design-system-library/production/arizona.min.css" rel="preload stylesheet" as="style" fetchpriority="high" />
+
+<script src="https://dsl.assets.christies.com/design-system-library/production/critical.min.js" async></script>
+<script type="module" src="https://dsl.assets.christies.com/design-system-library/production/christies-design-system-library.esm.js" defer></script>
+<script nomodule src="https://dsl.assets.christies.com/design-system-library/production/christies-design-system-library.js" defer></script>
+<link href="https://dsl.assets.christies.com/design-system-library/production/christies-design-system-library.css" rel="preload stylesheet" as="style" fetchpriority="high" />
+
+<script>
+    function getRootNode(o) { return "object" == typeof o && Boolean(o.composed) ? getShadowIncludingRoot(this) : getRoot(this) } function getShadowIncludingRoot(o) { var t = getRoot(o); return isShadowRoot(t) ? getShadowIncludingRoot(t.host) : t } function getRoot(o) { return null != o.parentNode ? getRoot(o.parentNode) : o }
+    function isShadowRoot(o) { return "#document-fragment" === o.nodeName && "ShadowRoot" === o.constructor.name } Object.defineProperty(Node.prototype, "getRootNode", { enumerable: !1, configurable: !1, value: getRootNode });
+</script>
+
+
+<link rel='shortcut icon' type='image/x-icon' href='/Assets/Discovery.Project.Website/V2023/favicons/favicon.ico'><link rel='icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/favicon-16x16.png' sizes='16x16'><link rel='icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/favicon-32x32.png' sizes='32x32'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-57x57.png' sizes='57x57'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-60x60.png' sizes='60x60'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-72x72.png' sizes='72x72'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-76x76.png' sizes='76x76'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-114x114.png' sizes='114x114'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-120x120.png' sizes='120x120'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-144x144.png' sizes='144x144'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-152x152.png' sizes='152x152'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-167x167.png' sizes='167x167'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-180x180.png' sizes='180x180'><link rel='apple-touch-icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-icon-1024x1024.png' sizes='1024x1024'><link rel='apple-touch-startup-image' media='(min-width: 320px) and (min-height: 480px) and (-webkit-device-pixel-ratio: 1)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-320x460.png'><link rel='apple-touch-startup-image' media='(min-width: 320px) and (min-height: 480px) and (-webkit-device-pixel-ratio: 2)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-640x920.png'><link rel='apple-touch-startup-image' media='(min-width: 320px) and (min-height: 568px) and (-webkit-device-pixel-ratio: 2)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-640x1096.png'><link rel='apple-touch-startup-image' media='(min-width: 375px) and (min-height: 667px) and (-webkit-device-pixel-ratio: 2)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-750x1294.png'><link rel='apple-touch-startup-image' media='(min-width: 414px) and (min-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-1182x2208.png'><link rel='apple-touch-startup-image' media='(min-width: 414px) and (min-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-1242x2148.png'><link rel='apple-touch-startup-image' media='(min-width: 414px) and (min-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-748x1024.png'><link rel='apple-touch-startup-image' media='(min-width: 768px) and (min-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-768x1004.png'><link rel='apple-touch-startup-image' media='(min-width: 768px) and (min-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-1496x2048.png'><link rel='apple-touch-startup-image' media='(min-width: 768px) and (min-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/apple-touch-startup-image-1536x2008.png'><link rel='icon' type='image/png' href='/Assets/Discovery.Project.Website/V2023/favicons/coast-228x228.png'>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#fff">
+        <meta name="application-name" content="Christie&#39;s">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="Christie&#39;s">
+        <meta name="msapplication-TileColor" content="#fff">
+        <meta name="msapplication-TileImage" content="/Assets/Discovery.Project.Website/mstile-144x144.png">
+        <meta name="msapplication-config" content="\Assets\Discovery.Project.Website\favicons\browserconfig.xml">
+        <meta name="yandex-tableau-widget" content="\Assets\Discovery.Project.Website\favicons\yandex-browser-manifest.json">
+
+
+    <script>
+    var $buoop = {
+        required: { e: -4, f: -3, o: -3, s: -1, c: -3 }, insecure: true, unsupported: true, api: 2020.02, text: {
+            'msg': 'Your web browser ({brow_name}) is out of date.',
+            'msgmore': 'Update your browser for more security, speed and the best experience on this site.',
+            'bupdate': 'Update browser',
+            'bignore': 'Ignore',
+            'remind': 'You will be reminded in {days} days.',
+            'bnever': 'Never show again'
+        }
+    };
+    function $buo_f() {
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+    catch (e) { window.attachEvent("onload", $buo_f) }
+    </script>
+
+
+
+
+
+<style>
+    .chr-theme--living-color.chr-theme--living-color {
+        --c-accent: 34, 30%, 97%;
+        --c-dominant: 34, 30%, 26%;
+    }
+</style>
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"58065",ustr:"",originlat:"0",clientrtt:"21",ghostip:"2.18.62.160",ipv6:false,pct:"10",clientip:"193.62.205.17",requestid:"8758ea",region:"45814",protocol:"",blver:14,akM:"a",akN:"ae",akTT:"O",akTX:"1",akTI:"8758ea",ai:"426341",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+    <body>
+        
+        
+
+
+
+
+<div id="focusablePlaceholder" tabindex="0" onfocus="this.remove()">
+    <!-- A first focusable element is focused after the cookie law banner is closed. To prevent visual issues, this element is a placeholder that's gonna be removed on focus. -->
+    <script>function getCookie(e) {
+      for (
+        var n = e + '=',
+          t = decodeURIComponent(document.cookie).split(';'),
+          o = 0;
+        o < t.length;
+        o++
+      ) {
+        for (var r = t[o]; ' ' == r.charAt(0); ) r = r.substring(1)
+        if (0 == r.indexOf(n)) return r.substring(n.length, r.length)
+      }
+      return null
+    }
+    if (getCookie('OptanonAlertBoxClosed')) {
+      document.getElementById('focusablePlaceholder').remove()
+    }</script>
+</div>
+
+<nav class="chr-skip-links" aria-label="Skip links">
+    <a class="chr-button chr-button--primary chr-button--lg chr-button--light" href="#main-content">
+        <span class="chr-button__text">
+            Skip to main content
+        </span>
+    </a>
+</nav>
+
+
+
+<script>
+    window.chrComponents = window.chrComponents || {};
+    window.chrComponents.header = {
+  "data": {
+    "header": {
+      "language": "en",
+      "language_id": "1",
+      "is_authenticated": false,
+      "page_refresh_after_sign_in": true,
+      "page_refresh_after_sign_out": true,
+      "sign_up_account_url": "https://signup.christies.com/signup",
+      "sign_up_from_live_chat_account_url": "https://signup.christies.com/signup?fromLiveChat=true",
+      "forgot_your_password_url": "https://www.christies.com/mychristies/passwordretrieval.aspx?",
+      "login_aws_waf_security_script_url": "https://671144c6c9ff.us-east-1.sdk.awswaf.com/671144c6c9ff/11d0f81935d9/challenge.js",
+      "logo": {
+        "title_txt": "Christie's",
+        "url": "https://www.christies.com/?lid=1&sc_lang=en",
+        "analytics_id": "header_logo",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1920 251\" style=\"overflow:visible;\"><path d=\"M1760.26,189.24l9.47,57.53h5.37a13.34,13.34,0,0,1,12-6.6c11.36,0,30.31,10.05,57.77,10.05,44.2,0,75.13-25.14,75.13-62.56,0-77.65-122.49-74.18-122.49-126,0-18.24,13.89-34.58,40.73-34.58s49.24,12.9,66.29,47.47h6.94l-8.2-52.5h-5.37c-1.89,4.08-5.05,5.66-9.46,5.66-11.06,0-27.15-8.79-51.77-8.79-38.84,0-66.62,21.69-66.62,55.63,0,69.79,120.59,71.05,120.59,126.69,0,22.63-18,40.87-47,40.87s-59.67-17-76.4-52.82Zm-66.6-151.83c0-10.38,7.26-18.24,20.52-18.24,15.16,0,25,10.69,25,28,0,22-15.47,40.24-42.31,51.55l-2.84-6c19.89-10.38,30.62-22,29.68-41.81a27.5,27.5,0,0,1-13,3.46c-10.1,0-17-6.6-17-17m-220,207.16h107.64c40.73,0,60.61.95,79.55,2.52l19.89-55.33h-6.94c-22.09,37.72-41.67,44.64-89,44.64h-6.94c-29.36,0-34.72-5.65-34.72-28.6V134.85h4.42c70.09,0,76.72,2.83,82.39,34.27h6.31V95.55h-6.31c-4.42,26.73-12.63,30.49-75.76,30.49H1543.1V33H1574c45.46,0,62.5,7.23,78,40.56H1659l-9.47-49H1473.66v6.28c29.35,1.26,34.72,5.66,34.72,28.6V209.68c0,22.95-5.37,27.36-34.72,28.6v6.28Zm-125,0h104.17v-6.28c-29.36-1.26-34.72-5.65-34.72-28.6V59.41c0-22.95,5.36-27.34,34.72-28.6V24.53H1348.62v6.28c29.35,1.26,34.71,5.66,34.71,28.6V209.68c0,22.95-5.36,27.36-34.71,28.6ZM1109.33,80.78h6.94c15.46-36.15,31.25-45.27,81.75-45.27h7.57V209.67c0,23-5.36,27.35-34.72,28.6v6.28h104.18v-6.28c-29.36-1.26-34.72-5.65-34.72-28.6V35.52H1246c52.09,0,68.18,9.12,83.65,45.28h6.94l-9.16-59.42h-5.06c-4.1,4.41-8.83,6.28-24.62,6.28H1148.14c-15.79,0-20.52-1.88-24.63-6.28h-5l-9.16,59.42,0,0ZM927.5,189.23,937,246.76h5.36a13.32,13.32,0,0,1,12-6.6c11.36,0,30.31,10.05,57.76,10.05,44.2,0,75.13-25.15,75.13-62.56,0-77.65-122.49-74.18-122.49-126,0-18.24,13.89-34.58,40.73-34.58s49.25,12.9,66.3,47.47h6.94L1070.49,22h-5.36c-1.9,4.08-5.06,5.66-9.47,5.66-11.05,0-27.15-8.8-51.77-8.8-38.83,0-66.6,21.7-66.6,55.64,0,69.79,120.59,71.05,120.59,126.69,0,22.63-18,40.86-47,40.86s-59.66-17-76.39-52.81ZM798.07,244.56H902.25v-6.28c-29.36-1.26-34.72-5.65-34.72-28.6V59.41c0-22.95,5.36-27.34,34.72-28.6V24.53H798.07v6.28c29.36,1.26,34.72,5.66,34.72,28.6V209.68c0,22.95-5.36,27.36-34.72,28.6v6.28ZM620.34,135.79V32.07a194.64,194.64,0,0,1,23.36-1.26c54,0,66.3,27.36,66.3,51.55C710,113.8,689.48,138,643.39,138a103.19,103.19,0,0,1-23-2.19M550.89,244.57H661.38v-6.28c-37.57-1.25-41-4.08-41-31.74V141.47c12,4.71,28.1,7.54,42.94,7.86L679.7,171c41.35,55.33,67.87,76.7,104.8,76.7v-6c-16.41-3.78-25.88-20.11-64.72-71.68l-20.52-27.36c26.21-9.12,47-28.6,47-61C746.3,55,729.25,23,655.06,23c-17,0-50.5,1.57-104.17,1.57V30.8c29.36,1.26,34.72,5.66,34.72,28.6V209.67c0,23-5.36,27.35-34.72,28.6Zm-292.64,0H362.42v-6.28c-29.35-1.25-34.72-5.65-34.72-28.6v-72H460.61v72c0,22.95-5.37,27.36-34.72,28.6v6.28H530.06v-6.28c-29.35-1.25-34.72-5.65-34.72-28.6V59.41c0-22.95,5.37-27.34,34.72-28.6V24.53H425.89v6.28c29.35,1.26,34.72,5.66,34.72,28.6v68.84H327.7V59.41c0-22.95,5.37-27.34,34.72-28.6V24.53H258.25v6.28C287.6,32.07,293,36.47,293,59.41V209.68c0,22.95-5.37,27.36-34.72,28.6v6.29Zm-122.8,5.67c36.94,0,64.4-10.06,85.87-9.12L241.52,183h-6.94c-20.2,37.09-48.93,58.78-87.44,58.78-59,0-102-50.29-102-115.37C45.14,54.7,80.49,8.49,139.54,8.49c38.83,0,69.45,19.8,89,60.67h6.93L225.4,3.45h-5.69c-2.53,4.72-6,6.28-11.06,6.28-9.15,0-29-9.74-70.39-9.74C59.35,0,0,51.87,0,128.25c0,68.53,62.82,122,135.42,122\"/></svg>"
+      },
+      "sign_in_api_endpoint": {
+        "url": "https://dw-prod-auth.christies.com",
+        "path": "auth/api/v1/login",
+        "method": "POST",
+        "parameters": {
+          "FromSignInToBid": ""
+        }
+      },
+      "sign_out_api_endpoint": {
+        "url": "https://dw-prod-auth.christies.com",
+        "path": "auth/api/v1/logout",
+        "method": "POST",
+        "parameters": {
+          "CurrentPageURI": ""
+        }
+      },
+      "sliding_session_api_endpoint": {
+        "url": "https://dw-prod-auth.christies.com",
+        "path": "auth/api/v1/refresh",
+        "method": "POST",
+        "parameters": null
+      },
+      "get_search_autocomplete_api_endpoint": {
+        "url": "https://search.christies.link",
+        "path": "keypubliclot/v1/api/LotFinder/Autocomplete",
+        "method": "GET",
+        "timeout_ms": 8000,
+        "parameters": {
+          "Size": "5",
+          "Value": ""
+        },
+        "header": {
+          "x-api-key": "w3etROpeli8m8bYEbfkpd2MflLigGa6cB0tk6b1g"
+        }
+      },
+      "upper_navigation_links": [
+        {
+          "title_txt": "How to sell",
+          "url": "https://www.christies.com/en/help/selling-guide/overview",
+          "type": "link",
+          "analytics_id": "header_howtosell"
+        }
+      ],
+      "languages": [
+        {
+          "title_txt": "繁",
+          "aria_label_txt": "Traditional Chinese",
+          "query_string_parameters": {
+            "lid": "3",
+            "sc_lang": "zh"
+          }
+        },
+        {
+          "title_txt": "簡",
+          "aria_label_txt": "Simplified Chinese",
+          "query_string_parameters": {
+            "lid": "4",
+            "sc_lang": "zh-cn"
+          }
+        }
+      ],
+      "main_navigation_links": [
+        {
+          "title_txt": "Auctions",
+          "url": "https://www.christies.com/en/calendar",
+          "type": "link",
+          "analytics_id": "header_auctions"
+        },
+        {
+          "title_txt": "Private Sales",
+          "url": "https://www.christies.com/en/private-sales/whats-on-offer",
+          "type": "link",
+          "analytics_id": "header_privatesales"
+        },
+        {
+          "title_txt": "Shop",
+          "url": "https://shop.christies.com/",
+          "type": "link",
+          "analytics_id": "header_shop"
+        },
+        {
+          "title_txt": "On View",
+          "url": "https://www.christies.com/en/stories/on-view-4323c96e8d15434092ff8abf2f2070fc?sc_mode=normal",
+          "type": "link",
+          "analytics_id": "header_onview"
+        },
+        {
+          "title_txt": "Departments",
+          "url": "https://www.christies.com/departments/index.aspx?sc_lang=en&lid=1",
+          "type": "link",
+          "analytics_id": "header_departments"
+        },
+        {
+          "title_txt": "Stories",
+          "url": "https://www.christies.com/en/stories/archive",
+          "type": "link",
+          "analytics_id": "header_stories"
+        },
+        {
+          "title_txt": "Services",
+          "url": "https://www.christies.com/en/services",
+          "type": "link",
+          "analytics_id": "header_services"
+        }
+      ],
+      "search": {
+        "number_of_letters_to_start": "3",
+        "time_to_start": "300",
+        "url": "https://www.christies.com/en/search"
+      },
+      "user_actions": [
+        {
+          "title_txt": "My account",
+          "url": "https://www.christies.com/mychristies/activities.aspx?activitytype=wc&submenutapped=true",
+          "id": "my-account",
+          "analytics_id": "header_myaccount"
+        },
+        {
+          "title_txt": "Sign in",
+          "url": "",
+          "id": "sign-in",
+          "analytics_id": "header_signin"
+        },
+        {
+          "title_txt": "Log out",
+          "url": "",
+          "id": "sign-out",
+          "analytics_id": "header_signout"
+        }
+      ],
+      "access_token_expiration": "0"
+    }
+  },
+  "labels": {
+    "login_modal_title_txt": "Sign in to your account to get recommendations, place bids and register for sales",
+    "login_modal_title_from_live_chat_txt": "Please log in or create an account to chat with a client service representative",
+    "login_modal_username_txt": "Email",
+    "login_modal_username_required_error_txt": "Please fill out email field.",
+    "login_modal_password_txt": "Password",
+    "login_modal_password_required_error_txt": "Please fill out password field.",
+    "login_modal_forgot_your_password_txt": "Forgot your password?",
+    "login_modal_sign_in_txt": "Sign in",
+    "login_modal_create_new_account_txt": "Create new account",
+    "login_modal_error_message_txt": "Something has gone wrong. Please try again or contact Client Services.",
+    "login_modal_show_password_txt": "Reveal password",
+    "login_modal_hide_password_txt": "Hide password",
+    "choose_language_txt": "Choose language",
+    "aria_main_nav_txt": "Primary",
+    "aria_menu_txt": "Menu",
+    "aria_search_txt": "Search",
+    "aria_user_navigation_txt": "User navigation",
+    "aria_search_btn_txt": "Submit search",
+    "aria_search_form_label_txt": "Site",
+    "language_label_txt": "English",
+    "login_modal_error_txt": "Something has gone wrong. Please try again or contact Client Services.",
+    "login_modal_invalid_credentials_txt": "The email address and password that you entered did not match our records. Please double-check and try again, or contact Client Services for further assistance.",
+    "login_modal_account_locked_txt": "You have exceeded the maximum number of attempts to log in. To protect your security, the account has been locked. We've sent you an email with instructions on how to unlock it, or please contact Client Services for further assistance.",
+    "refresh_modal_title_txt": "You've been signed out!",
+    "refresh_modal_message_txt": "You are no longer authenticated. Please refresh your page and sign in again if you wish to bid in auctions.",
+    "refresh_modal_button_txt": "Refresh the page",
+    "placeholder_txt": "Search by keyword",
+    "aria_results_available_singular_txt": "{count} result available",
+    "aria_results_available_plural_txt": "{count} results available",
+    "aria_results_keyboard_navigation": "When autocomplete results are available use Up and Down arrow keys to select the result and the Enter key to perform the search."
+  }
+};
+</script>
+
+<div class="chr-header-footer">
+    <chr-header data-namespace="header"></chr-header>
+</div>
+
+<script>
+    window.chrGlobal = window.chrGlobal || {};
+    window.chrGlobal.labels = {
+        close_modal_txt: 'Close'
+    };
+</script>
+
+
+<script>
+    window.chrComponents = window.chrComponents || {};
+    window.chrComponents.live_chat = {
+  "data": {
+    "get_user_details_api_endpoint": {
+      "url": "https://www.christies.com",
+      "path": "ChristiesAPIServices/DotcomAPIs/api/mychristies/GetUserDetails",
+      "method": "POST"
+    }
+  }
+};
+</script>
+
+<div class="chr-live-chat">
+    <chr-live-chat></chr-live-chat>
+</div>    <main>
+        
+
+
+
+    <script>
+        var AnalyticsDataLayer = {"page":{"name":"Lot","channel":"Lot Content","language":"en","template":"Lot","department":"Jewellery"},"user":{"status":"Not Logged In/No Account","GUID":"","platform":"web"},"events":{"lot_view":true}};
+    </script>
+
+
+
+
+  <script>
+        var EnableCookieBanner = true;
+        var IsMobileApp = false;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-migrate-3.3.2.js"></script>
+  <script src="//assets.adobedtm.com/4f105c1434ad/05fddbc767bb/launch-1b477ca5fd6e.min.js" async></script>
+
+
+
+<div id="main-content"></div>
+
+
+<div>
+    
+
+
+
+
+
+
+
+	<script>
+        AnalyticsDataLayer.lot = {"number":"5","id":"6350105","status":"Closed"};
+        AnalyticsDataLayer.sale = {"type":"Traditional","id":"29200","number":"20055","location":"London"};
+
+        window.chrComponents = window.chrComponents || {};
+        window.chrComponents.lotHeader_1205114186 = {"data":{"save_lot_livesale_api_endpoint":{"url":"//www.christies.com","path":"lots_webapi/api/lotslist/SaveLot","method":"POST","parameters":{"object_id":"","apikey":"708878A1-95DB-4DC2-8FBD-1E8A1DCE703C","save":""}},"cost_calculator_api_endpoint":{"url":"//payments.christies.com","path":"REST/JSON/CostCalculator","method":"POST","parameters":{"API_Key":"fdsaGdsdAS","SaleNumber":"20055","LotNumber":"5","LotSuffix":"","Currency":"GBP"}},"lot_primary_action":{"show":false,"is_enabled":false,"button_txt":"","action_display":"modal","action_type":"url","action_value":"","action_event_name":null,"analytics_id":"live_registertobid"},"lots":[{"object_id":"6350105","lot_id_txt":"5","analytics_id":"20055.5","event_type":"Sale","url":"https://www.christies.com/en/lot/lot-6350105","previous_lot_url":"https://www.christies.com/en/lot/lot-6350104","next_lot_url":"https://www.christies.com/en/lot/lot-6350106","title_primary_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)","title_secondary_txt":"Portrait of a gentleman, half-length, in black, his right hand resting on a book","title_tertiary_txt":"","estimate_visible":true,"estimate_on_request":false,"price_on_request":false,"lot_estimate_txt":"","estimate_low":800000.0,"estimate_high":1200000.0,"estimate_txt":"GBP 800,000 – GBP 1,200,000","price_realised":1222500.0,"price_realised_txt":"GBP 1,222,500","lot_assets":[{"display_type":"basic","asset_type":"basic","asset_type_txt":"basic","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"},{"display_type":"basic","asset_type":"basic","asset_type_txt":"basic","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_001(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"},{"display_type":"basic","asset_type":"basic","asset_type_txt":"basic","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_002(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"},{"display_type":"basic","asset_type":"basic","asset_type_txt":"basic","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_003(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"},{"display_type":"basic","asset_type":"basic","asset_type_txt":"basic","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_004(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"},{"display_type":"iframe","asset_type":"szi","asset_type_txt":"Superzoom","asset_alt_txt":"","url":"https://www.christies-media.com/assets/20055-64008257-sz/view/iframe","image_url":""},{"display_type":"scale","asset_type":"viewscale","asset_type_txt":"View scale","asset_alt_txt":"DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)\n","image_url":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?mode=max","height_cm":"100","width_cm":"82.8","foreground_url":"https://onlineonly.christies.com/Content/v3/images/relative-size-viewer_chair_277x277.png","background_url":"https://onlineonly.christies.com/Content/v3/images/relative-size-viewer_1024x554.png","measurements_txt":"W 33 ½ x H 39 ¼ in. (82.8 x 100.0 cm.)"}],"is_saved":false,"show_save":true,"is_unsold":false}],"sale":{"sale_id":"29200","sale_number":"20055","sale_room_code":"CKS","event_type":"Sale","title_txt":"Old Masters Evening Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","registration_close_date":"2021-12-07T08:00Z","location_txt":"London","url":"https://www.christies.com/en/auction/old-masters-evening-sale-29200/","is_auction_over":true,"is_in_progress":false,"time_zone":"GMT"},"ui_state":{"hide_timer":false,"hide_bid_information":false,"hide_tooltip":false,"hide_cost_calculator":false}},"labels":{"lot_txt":"Lot","lot_ended_txt":"Closed","registration_closes_txt":"Registration closes","bidding_starts_txt":"Bidding starts","current_bid_txt":"Current bid","estimate_txt":"Estimate","estimate_on_request_txt":"Estimate on request","price_on_request_txt":"Price on request","price_realised_txt":"Price realised","currency_txt":"GBP","closed_txt":"Closed","save_txt":"Save","saved_txt":"Saved","follow_txt":"Follow","followed_txt":"Followed","unfollow_txt":"Following","aria_follow_txt":"Follow {lottitle}","aria_unfollow_txt":"Unfollow {lottitle}","aria_expand_content_txt":"Visually expand the content","aria_collapse_content_txt":"Visually collapse the content","share_txt":"Share","closing_txt":"Closing","day_txt":"day","days_txt":"days","hour_unit_txt":"h","minute_unit_txt":"m","second_unit_txt":"s","more_txt":"more","share_title_txt":"Share via email","try_our_txt":"Try our","cost_calculator_txt":"Cost Calculator","cost_calculator_response_txt":"Below is your estimated cost based on the bid","cost_calculator_submit_txt":"Calculate","cost_calculator_bid_amount_label_txt":"Enter a bid","cost_calculator_generic_error_txt":"Sorry, something went wrong, please try again.","cost_calculator_bid_amount_missing_txt":"Missing amount","cost_calculator_your_bid_txt":"Your bid","cost_calculator_tooltip_btn_txt":"Show tooltip","cost_calculator_tooltip_txt":"Exclusive of all duty, taxes, import VAT and/or customs processing fees.","cost_calculator_invalid_value_txt":"Enter a valid amount, e.g. 1000.00","cost_calculator_title_txt":"Cost Calculator","cost_calculator_disclaimer_txt":"Below is your estimated cost based on the bid","cost_calculator_input_label_txt":"Enter the bid value","cost_calculator_buyers_premium_txt":"Estimated Buyer's Premium","cost_calculator_total_txt":"Estimated cost exclusive of duties","aria_cost_calculator_input_currency_txt":"Currency","bid_tooltip_txt":"Estimates do not reflect the final hammer price and do not include buyer's premium, and applicable taxes or artist's resale right. Please see Section D of the Conditions of Sale for full details.","timer_tooltip_txt":"Please note that if a bid is placed on this lot within the final three minutes of the closing time indicated in the countdown clock, three additional minutes will be added to the designated closing time. See our <a href=\"https://www.christies.com/about-us/help.aspx\">FAQs</a> for further information.","auction_happening_now_txt":"Happening now","aria_scroll_to_top_txt":"Scroll to top","loading_txt":"Loading details","aria_primary_media_video_txt":"Video for {title}","aria_gallery_next_txt":"View next","aria_gallery_previous_txt":"View previous","ar_view_at_home_txt":"View at home","ar_scan_qr_txt":"Scan the QR code with your phone or tablet camera to view this lot in augmented reality.","ar_view_in_ar_txt":"View this lot in augmented reality with your phone or tablet.","ar_not_available_txt":"We’re sorry, this experience is only available on devices that support augmented reality.","ar_get_started_txt":"Get started","symbols_important_information_txt":"Important information about this lot","aria_symbols_important_information_txt":"Important information about this lot"}};
+
+    </script>
+    <div data-analytics-region="lotheader-full" class="chr-lot-header">
+        <div class="chr-lot-header--full chr-theme--living-color">
+            <div class="chr-lot-header__breadcrumb">
+                <div class="container-fluid chr-lot-header__breadcrumb-inner">
+
+                    <nav aria-label="Breadcrumb" class="chr-breadcrumb">
+                        <ol class="chr-breadcrumb__list">
+                            <li class="chr-breadcrumb__list-item chr-breadcrumb__list-item--active">
+                                <a class="chr-breadcrumb__link"
+                                   href="https://www.christies.com/en/auction/old-masters-evening-sale-29200/"
+                                   data-track="breadcrumb|auction-overview">
+                                        <chr-icon class="pr-2" icon="chevron" size="xs"></chr-icon>
+                                    <div class="chr-lot-header__breadcrumb-detail">
+                                        <span class="chr-body-s mr-1">
+                                            Live Auction 20055
+                                        </span>
+                                        <span class="chr-body-medium">Old Masters Evening Sale</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ol>
+                    </nav>
+
+                        <div class="d-none d-md-flex">
+                            <div class="chr-item-pagination">
+                                <a href="https://www.christies.com/en/lot/lot-6350104" aria-label="previous lot">
+                                    <chr-icon icon="arrow" icon="xs"></chr-icon>
+                                </a>
+                                <span class="chr-item-pagination__label">Lot 5 </span>
+                                <a href="https://www.christies.com/en/lot/lot-6350106" aria-label="next lot">
+                                    <chr-icon icon="arrow" rotation="180" size="xs"></chr-icon>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+                    <div class="d-block d-md-none">
+                        <div class="chr-lot-header__breadcrumb-pagination">
+                            <div class="container-fluid chr-lot-header__breadcrumb-pagination-inner">
+                                <div class="chr-item-pagination">
+                                    <a href="https://www.christies.com/en/lot/lot-6350104" aria-label="previous lot">
+                                        <chr-icon icon="arrow" icon="xs"></chr-icon>
+                                    </a>
+                                    <span class="chr-item-pagination__label">5 </span>
+                                    <a href="https://www.christies.com/en/lot/lot-6350106" aria-label="next lot">
+                                        <chr-icon icon="arrow" rotation="180" size="xs"></chr-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-none col-lg-1 d-lg-block">
+                            <div class="chr-lot-header__thumbnails">
+                                    <chr-lot-header-gallery-button lot-id="6350105" data-namespace="lotHeader_1205114186" gallery-item-index="1" region="lot-header-thumbnail-1">
+                                        <div class="chr-lot-header__thumbnail">
+                                            <div class="chr-img__wrapper chr-img__wrapper--natural-height" data-img-id="5d447980-fc83-4666-b7c0-188c6a192176"><img alt="DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)
+" class="chr-img lazyload" data-sizes="100px" data-srcset="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_001(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=100 100w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_001(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=200 200w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_001(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=300 300w" src="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_001(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=1"></img></div>
+                                        </div>
+                                    </chr-lot-header-gallery-button>
+                                    <chr-lot-header-gallery-button lot-id="6350105" data-namespace="lotHeader_1205114186" gallery-item-index="2" region="lot-header-thumbnail-2">
+                                        <div class="chr-lot-header__thumbnail">
+                                            <div class="chr-img__wrapper chr-img__wrapper--natural-height" data-img-id="8e0e8c09-5e2c-4226-9c16-37cd07209cb3"><img alt="DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)
+" class="chr-img lazyload" data-sizes="100px" data-srcset="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_002(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=100 100w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_002(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=200 200w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_002(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=300 300w" src="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_002(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=1"></img></div>
+                                        </div>
+                                    </chr-lot-header-gallery-button>
+                                    <chr-lot-header-gallery-button lot-id="6350105" data-namespace="lotHeader_1205114186" gallery-item-index="3" region="lot-header-thumbnail-3">
+                                        <div class="chr-lot-header__thumbnail">
+                                            <div class="chr-img__wrapper chr-img__wrapper--natural-height" data-img-id="2aed9772-7d88-4ce9-bd9d-9c891f388113"><img alt="DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)
+" class="chr-img lazyload" data-sizes="100px" data-srcset="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_003(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=100 100w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_003(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=200 200w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_003(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=300 300w" src="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_003(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=1"></img></div>
+                                        </div>
+                                    </chr-lot-header-gallery-button>
+                                                                    <div>
+                                        <chr-lot-header-gallery-button lot-id="6350105" data-namespace="lotHeader_1205114186" gallery-item-index="0" region="lot-header-thumbnail-0">
+                                            <div class="chr-lot-header__more-thumbnails">
+                                                <chr-icon icon="plus"></chr-icon>
+                                                <span class="chr-action">1 More</span>
+                                            </div>
+                                        </chr-lot-header-gallery-button>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-7 chr-lot-header__media-column">
+                        <div class="chr-lot-header__media">
+                                <chr-lot-header-gallery-button data-namespace="lotHeader_1205114186" lot-id="6350105" gallery-item-index="0" region="lot-header-image">
+                                        <div class="chr-lot-header__image">
+                                            <div class="chr-lot-header__image-container">
+                                                <div class="chr-img__wrapper chr-img__wrapper--natural-height" data-img-id="2021dcd7-4261-4814-ae1c-39b3f88e344d"><img alt="DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)
+" class="chr-img lazyload" data-sizes="(min-width: 1224px) 1010px, (min-width: 768px) 695px, (min-width: 576px) 750px, 560px" data-srcset="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=560&amp;maxheight=350 560w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=1120&amp;maxheight=700 1120w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=1680&amp;maxheight=1050 1680w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=750&amp;maxheight=350 750w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=1500&amp;maxheight=700 1500w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=2250&amp;maxheight=1050 2250w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=695&amp;maxheight=650 695w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=1390&amp;maxheight=1300 1390w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=2085&amp;maxheight=1950 2085w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=1010&amp;maxheight=650 1010w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=2020&amp;maxheight=1300 2020w, https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?maxwidth=3030&amp;maxheight=1950 3030w" src="https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0005_000(domenikos_theotokopoulos_called_el_greco_portrait_of_a_gentleman_half-_d6350105053802).jpg?w=1"></img></div>
+                                            </div>
+                                        </div>
+                                </chr-lot-header-gallery-button>
+                            <div>
+                                    <chr-lot-header-gallery-button lot-id="6350105" data-namespace="lotHeader_1205114186" gallery-item-index="0" region="lot-header-thumbnail-0">
+                                        <div class="chr-lot-header__more-button">
+                                            <chr-icon icon="plus"></chr-icon>
+                                            <span class="chr-action">4 More</span>
+                                        </div>
+                                    </chr-lot-header-gallery-button>
+                                                                    <chr-lot-header-media-controls data-namespace="lotHeader_1205114186" lot-id="6350105"></chr-lot-header-media-controls>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-lot-header__information-column col-sm-12 col-md-5 col-lg-4">
+                        <div class="chr-lot-header__information">
+                            <div class="chr-lot-header__description">
+
+                                    <span class="chr-body-s">PROPERTY RESTITUTED TO THE HEIRS TO THE COLLECTION OF JULIUS AND CAMILLA PRIESTER</span>
+                            </div>
+                            <span class="chr-lot-header__artist-name">DOM&#201;NIKOS THEOTOK&#211;POULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)</span>
+                            <h1 class="chr-lot-header__title">Portrait of a gentleman, half-length, in black, his right hand resting on a book</h1>
+
+                                                        <div style="border-bottom: 1px solid rgba(34, 34, 34, 0.1); border-bottom-color: var(--c-grey-alpha-10); padding-bottom: 12px;"></div>
+
+                            <div class="mt-3">
+                                <chr-lot-header-dynamic-content data-namespace="lotHeader_1205114186" lot-id="6350105">
+                                </chr-lot-header-dynamic-content>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fixed header -->
+    <span id="fixed-head-observer" class="fixed-tracker"></span>
+    <chr-fixed-wrapper tracker="#fixed-head-observer">
+        <chr-lot-header data-namespace="lotHeader_1205114186"
+                        display="collapsed"
+                        lot_id="6350105"
+                        title_primary_txt="DOM&#201;NIKOS THEOTOK&#211;POULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)"
+                        title_secondary_txt="Portrait of a gentleman, half-length, in black, his right hand resting on a book" living-color>
+        </chr-lot-header>
+    </chr-fixed-wrapper>
+    <!-- /fixed header -->
+
+</div>
+<div class="chr-lot-detail__main">
+   
+    <div class="chr-lot-detail__vertical-scroll col-2">
+        <chr-sticky-wrapper top="25vh">
+            <chr-vertical-scroll-nav></chr-vertical-scroll-nav>
+        </chr-sticky-wrapper>
+    </div>
+
+    
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 offset-lg-2">
+                <div data-scroll-section="Details" id="details">
+                    <section class="chr-lot-details">
+                        <div class="chr-lot-section__center">
+                            <chr-accordion auto-close="false">
+                                    <chr-accordion-item open accordion-id="0">
+                                        <div slot="header">Details</div>
+                                        <div slot="content" class="content-zone chr-lot-section__accordion--content">
+                                            <span class="chr-lot-section__accordion--text">DOMÉNIKOS THEOTOKÓPOULOS, CALLED EL GRECO (CRETE 1541-1614 TOLEDO)<br>
+Portrait of a gentleman, half-length, in black, his right hand resting on a book<br>
+inscribed and dated ‘NASCITUR SESTO CALEND. SEPTEB/ANNO DNI M.D. XXIII. / DEPINGITUR VERO II DE IUN. M.D. LXX’ (centre left)<br>
+oil on canvas<br>
+39 3&#x2044;8 x 32 5&#x2044;8 in. (100 x 82.8 cm.)<br>
+</span>
+                                        </div>
+                                    </chr-accordion-item>
+                                                                    <chr-accordion-item open accordion-id="1">
+                                        <div slot="header">Provenance</div>
+                                        <div slot="content" class="content-zone chr-lot-section__accordion--content">
+                                            <span class="chr-lot-section__accordion--text">(possibly) Ritter von Schoeller, Vienna.<br>Julius and Camilla Priester, Vienna, by 1924, from whom confiscated by the Gestapo, 11 February 1944. <br>Bernhard Wittke, Vienna. <br>with Galerie Sanct Lukas, Vienna, by whom sold to the following,<br>with Frederick Mont, New York, 1952. <br>with M. Knoedler & Co, New York (jointly owned with Frederick Mont and Pinakos Inc), by March 1953. <br>Private collection, Italy, by 1970s, from whom purchased in 2010 by a London dealer.<br>Restituted to the heirs of Julius and Camilla Priester, 2015.</span>
+                                        </div>
+                                    </chr-accordion-item>
+                                                                    <chr-accordion-item open accordion-id="2">
+                                        <div slot="header">Literature</div>
+                                        <div slot="content" class="content-zone chr-lot-section__accordion--content">
+                                            <span class="chr-lot-section__accordion--text">G. Fiocco, <i>Arte Veneta: Rivista di Storia Dell'Arte</i>, Venice, 1947, pp. 217-219. <br>M.S. Soria, ‘Greco’s Italian Period’, <i>Arte Veneta</i>, VIII, 1954, pp. 217-219, no. 37, fig. 233.<br>H. Wethey, <i>El Greco and His School</i>, Princeton, 1962, II, p. 202-203, no. X-170.<br>J. Camón Aznar, <i>Domenico Greco</i>, Madrid, 1970, p. 150, fig. 91.<br>L. Puppi, <i>El Greco in Italia: Metamorfosi di un genio</i>, Treviso, 2015, p. 113.<br>K. Christiansen, ‘Greco en Italie’, in the exhibition catalogue, <i>Greco, </i>Paris, 2019, p. 32.</span>
+                                        </div>
+                                    </chr-accordion-item>
+                                                                    <chr-accordion-item open accordion-id="3">
+                                        <div slot="header">Exhibited</div>
+                                        <div slot="content" class="content-zone chr-lot-section__accordion--content">
+                                            <span class="chr-lot-section__accordion--text">Stockholm, Nationalmuseum, <i>Stora Spanska Mä</i><i>stare</i>, 12 December 1959-13 March 1960, no. 52.<br>Heraklion, Heraklion Chamber of Commerce, <i>El Greco of Crete. Exhibition on the occasion of the 450</i><i>th </i><i> anniversary of his birth</i>, 1 September-10 October 1990, no. 6.<br>Treviso, Casa dei Carraresi, <i>El Greco in Italia, Metamorfosi di un genio</i>, 23 October 2015-1 May 2016, no. 48.<br>Paris, Grand Palais, <i>Greco</i>, 16 October 2019-10 February 2020, no. 20.</span>
+                                        </div>
+                                    </chr-accordion-item>
+                                                                                                                                                                    <chr-accordion-item open accordion-id="6">
+                                        <div slot="header">Sale room notice</div>
+                                        <div slot="content" class="content-zone chr-lot-section__accordion--content">
+                                            <span class="chr-lot-section__accordion--text">Please note additional literature: F. Moro, <i>Caravaggio sconosciuto. Le origini del Merisi, eccellente disegnatore, maestro di ritratti e di “cose naturali”</i><i>, </i>Torino, 2016, pp. 39, plate 33.</span>
+                                        </div>
+                                    </chr-accordion-item>
+                            </chr-accordion>
+                                <ul class="chr-lot-section__link-list">
+                                        <li class="chr-lot-section__link-list-item">
+                                            <a class="chr-body-s chr-link--underline" href="https://www.christies.com/media-library/pdf/conditions-of-sale/london-conditions-of-sale.pdf" target="_blank">Conditions of sale</a>
+                                        </li>
+                                                                    </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 offset-md-1">
+                <section class="chr-specialist-info">
+
+                    
+    <h2 class="chr-heading-s-serif mb-4">
+        Brought to you by
+    </h2>
+    <div class="chr-specialist-info__row">
+        <div class="chr-avatar mr-3">
+            <div class="chr-avatar__image chr-avatar__image--md">
+<div class="chr-img__wrapper" data-img-id="27f460dd-632e-4565-adbe-4578b1c30d5b" style="padding-top: 100%"><img alt="Clementine Sinclair" class="chr-img lazyload" data-sizes="60px" data-srcset="https://www.christies.com/img/specialistImages/sinclair_clementine__Clementine_Sinclair_417.jpg?w=60 60w, https://www.christies.com/img/specialistImages/sinclair_clementine__Clementine_Sinclair_417.jpg?w=120 120w, https://www.christies.com/img/specialistImages/sinclair_clementine__Clementine_Sinclair_417.jpg?w=180 180w" src="https://www.christies.com/img/specialistImages/sinclair_clementine__Clementine_Sinclair_417.jpg?w=1"></img></div>            </div>
+        </div>
+        <div class="chr-specialist-info__wrapper">
+            <span class="chr-specialist-info__name">
+                Clementine Sinclair
+            </span>
+            <span class="chr-specialist-info__category">
+                Senior Director, Head of Department
+            </span>
+        </div>
+    </div>
+    <div class="chr-specialist-info__contacts">
+        <a class="chr-specialist-info__contacts--email" href="mailto:csinclair@christies.com">
+            csinclair@christies.com
+        </a>
+        <a class="chr-specialist-info__contacts--phone" href="tel:+44(0)2073892306">
+            +44 (0)20 7389 2306
+        </a>
+    </div>
+
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="chr-theme--living-color">
+        <div class="container-fluid">
+            <div class="col-md-8 col-lg-7 offset-md-2">
+                <section data-scroll-section="Lot essay" id="story" class="chr-lot-section">
+                    <div class="chr-lot-section__center">
+                        <h2 class="chr-lot-article__title">Lot Essay</h2>
+                        <chr-readmore-expander button-variant="stand-alone" label-more="Read more" label-less="Read less" height="400" scroll-on-close="true" data-qa="lot-essay__expander" tracking-location="lot:lot essay:standard">
+                            <div class="content-zone chr-body">
+                                Julius (1870-1955) and Camilla (1885-1962) Priester were passionate Viennese art collectors. Their elegant apartment in the heart of Vienna displayed more than 80 Old Master and nineteenth century paintings, evoking the refinement and confidence of pre-war Vienna, and the Priesters’ own clear sense of taste and style. <br><i>Generaldirektor </i>Julius Priester, a respected industrialist, was involved in numerous enterprises including the Petroleumgesellschaft Galizin GmbH and notably had commercial interests in oil and the energy sector. <br>From the early 1920s, Julius Priester devoted himself to building up an art collection, advised by Moritz Lindemann, an Old Master dealer with a gallery on Vienna’s Karlsplatz. The paintings were displayed both in Priester’s office and in the third- floor apartment where he and his wife Camilla lived on Ebendorferstrasse in Vienna’s historic centre. Julius Priester was particularly interested in Dutch and Italian artists including Peter Paul Rubens, Frans Hals, Tintoretto, David Teniers, Pinturrichio and Anthony van Dyck, and had a distinct eye for portraits. Photographs of the Priester apartment taken before 1938 show the paintings displayed within and complemented by an oak-furnished setting evoking a Renaissance-style interior. The collection also included outstanding works by nineteenth century artists such as Josef Danhauser, Carl Moll and Rudolf von Alt. <br>The Priesters’ life was dramatically changed by the ‘Anschluss’ or annexation of Austria by Nazi Germany on 12 March 1938. Forced to flee their home and their country, they lost all of their property and assets in Vienna, including all their paintings, as well as silverware, tapestries and antique Persian carpets. On 31 March 1938, Julius and Camilla Priester fled to Paris and then on to Mexico City, where they arrived in late August 1940. They never returned to Austria. Julius died in Mexico in 1955, Camilla in 1962. From abroad, Julius Priester arranged for the contents of the Ebendorferstrasse apartment to be packed and stored with the interior decorator and shipping agent Max Föhr; he was to have sent them on to Paris. But, as the Nazi grip on Jewish property tightened, these plans proved in vain. In August 1938 and 11 May 1939 the contents of the apartment were appraised by art experts under the supervision of the Gestapo and the <i>Zentralstelle für Denkmalschutz </i>(Central Office of Heritage Protection). This resulted in the seizure of five paintings in November 1938, followed by a further nine in May 1939, which entered museum collections including that of the Kunsthistorisches Museum in Vienna. The rest of the collection and furnishings were transferred to Max Föhr for storage but, although an export licence was applied for, no shipment was permitted. In February 1944, the art collection and furnishings were confiscated by the Gestapo and removed in six trucks. <br>After the war, Julius Priester made extensive efforts to trace and recover the missing collection. In May 1947, his lawyer, Dr Erich Goglia, registered a claim with the Austrian authorities, enclosing a list of paintings based on an inventory drawn up for insurance purposes on 4 May 1937 by Dr Robert Eigenberger, director of the Picture Gallery of Vienna’s Academy of Fine Arts. From Mexico, Julius Priester was in frequent contact with his Vienna-based lawyers and his private secretary Henriette Geiringer. Their extensive correspondence on tracing the collection bears testimony both to their concerted efforts but also to the obstacles encountered. They contacted the authorities in Austria, including the Federal Heritage Office and the Austrian Federal Police, and internationally, through Interpol and their own efforts, the German, Swiss and French police and US legal authorities. The Priester losses were also reported in the press, notably in connection with court proceedings, such as a 1953 court case against Julius Strecker, a former appraiser for the Gestapo, in whose possession their Rubens painting <i>Man with a fur coat </i>was located. In 1954 the Austrian Federal Police circulated internationally an illustrated search list of 17 of the missing Priester paintings. This list includes the de Witte and the Master of Frankfurt, but not the El Greco as the police were then on its trail. While a number of works, notably those confiscated in 1938 and 1939, could be traced in the years after the war, the bulk of the collection remained missing. After Julius Priester’s death, his widow continued to search for the missing art, a search which has since been carried on by the couple’s heirs. While a number of works, notably those confiscated in 1938 and 1939, could be traced in the years after the war, the bulk of the collection remained missing. After Julius Priester’s death, Camilla continued to search for the missing art, a search which has since been carried on by the couple’s heirs.<br><br>Dated 1570, the year the artist arrived in Rome, this compelling picture of an unidentified man is one of the earliest surviving portraits by El Greco and one of the last to remain in private hands. While revealing a considerable debt to contemporary sixteenth century Venetian portraiture, the Priester portrait is charged with an uncompromising intensity that would define El Greco’s revolutionary idiom, securing his reputation as one of the great visionaries of western art.<br>Executed on a twill canvas similar to those favoured by the artist during the 1570s, the Priester portrait follows an established Venetian pattern, owing much to the late works in that genre by his master Titian and Jacopo Bassano. Set against a neutral backdrop, the dramatically lit face and hands are in deliberate contrast to the sober black costume, with the sitter’s features framed by his closely-cropped dark hair and beard. The influence of El Greco’s Venetian contemporaries, particularly Tintoretto, is further evident in the restrained tonality, open brushwork and application of dry paint, which are here masterfully employed in the beautifully preserved modelling of the man’s head, and in details such as the rendering of the book. Despite the presence of both a date (January, or June, 1570) and coat-of-arms – the latter painted with a flickering freedom that signals El Greco’s evolving mature style – the identity of the sitter has eluded scholars of the artist’s work.<br>The picture represents a key work in our understanding of El Greco’s development in this genre. In 1954, Martin Soria <i>(op. cit.)</i>, compared it with the artist’s portrait of his friend Giulio Clovio (1570–1575; Naples, Museo Nazionale di Capodimonte; fig. 1), in which the sitter is shown with his celebrated illuminated manuscript, <i>The Farnese Hours </i>(1546; New York, The Pierpont Morgan Library). The attribution for the present portrait was subsequently rejected by Wethey in his 1962 catalogue <i>(op. cit.)</i>, but later endorsed in 1970 by Camón Aznar <i>(op. cit.)</i>, who pointed out stylistic affinities with the work of Bassano and Tintoretto. Following its inclusion in the 2015 exhibition in Treviso<i>, </i>the portrait was included in the highly acclaimed 2019–2020 Paris Grand Palais exhibition: <i>Greco</i>, where it occupied a central position in the room dedicated to the artist’s early portraits. In this context, it was evident that the Priester portrait had survived in particularly fine condition, with the sitter’s arresting head and blacks of his costume especially well preserved.<br>As Charlotte Chastel-Rousseau has observed in the <i>Greco </i>exhibition catalogue <i>(op. cit., p. 113), </i>there are a number of striking similarities with the signed <i>Portrait of an architect</i>, dated to <i>circa </i>1575–1576 (Copenhagen, Statens Museum for Kunst; fig. 2), the most conspicuous of which is the inclusion of the same book, with its highly unusual pairs of red and white silk ties. She further notes the comparable treatment of the sitter’s hands, sleeves and collar. That picture, also rejected by Wethey, was once considered to be a self-portrait by Tintoretto, and had also been given to Bassano before El Greco’s signature was discovered in 1898. There are familiar parallels in the Copenhagen portrait’s complicated attributional past with El Greco’s imposing full-length of Cardinal de Guise (1572; Zurich, Kunsthaus Zurich), which was historically given to Tintoretto before being dismissed by Wethey who, perhaps inevitably, ascribed it to Bassano. As Chastel-Rousseau has noted, the Zurich picture, now accepted by scholars as an important early work, can be dated on stylistic grounds to a moment between the Priester portrait and the Copenhagen picture.<br>El Greco’s formative years in Italy began in Venice, where he had settled by 1567. A letter from the Croatian miniaturist and illuminator Giulio Clovio to his patron Cardinal Alessandro Farnese, dated 16 November 1570, describes the young Cretan as ‘a pupil of Titian, who in my opinion has a rare gift for painting; and among other things, he has done a portrait of himself that has astonished all these painters of Rome’.<br>The letter, which suggests El Greco had by then already established a reputation as an accomplished portraitist amongst his fellow artists in Rome, resulted in an invitation to lodge at Palazzo Farnese. The Cardinal, who had famously sat for Titian with his grandfather, Pope Paul III (1545–46; Naples, Museo Nazionale di Capodimonte), subsequently housed the artist until July 1572. There, within the Farnese circle, El Greco befriended Alessandro’s librarian, the humanist Fulvio Orsini, for whom he painted seven pictures including five now lost portraits. These years in Italy marked a key moment in El Greco’s development as a portraitist, culminating in his magnificent full-length of Vincenzo Anastagi<i>, </i>painted in 1575 and now in the Frick Collection, New York (fig. 3).<br>The spare palette employed for the Priester picture and others from this period was largely confined to El Greco’s portraiture. His religious paintings from his formative years in Italy also reveal a considerable debt to Tintoretto; notably the Christ expelling the money-lenders from the <i>Temple </i>(<i>circa </i>1570; Washington, National Gallery of Art) – the earliest treatment of a subject that the artist would return to throughout his career – and the small, sparkling panel depicting <i>The Entombment of Christ (circa </i>1570–1575; Newark, Alana Collection), another picture from this period inexplicably rejected by Wethey but now considered a key early work. These pictures display the high tonality and staccato brushstrokes that defined his later <i>oeuvre </i>and would haunt artists from the seventeenth century to the modern day.<br>El Greco the ‘<i>Prophet of Modernism</i>’<br>Like a number of Old Master painters we most admire today, notably Caravaggio, Johannes Vermeer and Frans Hals, El Greco’s reputation as one of the great revolutionaries in Western Art is a relatively recent phenomenon. Since his ‘rediscovery’, which arguably began in 1902 with the monographic exhibition devoted to him at the Prado, El Greco’s work has continued to flood the consciousness of modern artists and writers. The German art critic Julius Meier-Graefe, whose enormously influential <i>Spanische Reise </i>(<i>Spanish Journey</i>; 1910), carried the torch for El Greco as a proto-modernist and compared him to Cézanne when he wrote that the Cretan ‘was so remarkably like our contemporary that one is tempted to take back everything that has been said about the idiosyncrasies of our era, and count the most independent minds of our time as the immediate successors to El Greco…they have the same violence of expression and reduced physicality in the details’. This conjunction of El Greco and the early 20th century contemporary art movement was eloquently described by Roger Fry when he wrote: ‘…for here is an Old Master who is not merely modern but actually appears a good many steps ahead of us, turning back to show us the way.’<br>El Greco’s intrusion onto the consciousness of the European avant-garde had actually begun earlier, in the middle of the nineteenth century. The critic Théophile Gautier, one of the artist’s most significant advocates, declared his admiration in <i>Voyage en Espagne </i>(1843), but also claimed that El Greco had gone mad through excessive artistic sensitivity. In 1874, the same year as the celebrated exhibition of ‘Impressionists’ at the studio of the photographer Felix Nadar, a German art historian from Bonn named Carl Justi recognised the first paintings by El Greco in Germany, formerly attributed to Bassano. He would go on to publish <i>Domenico Theodocopoli von Kreta </i>in 1897. Justi, among El Greco’s first admirers, was far from a supporter of Modernism and, like many of El Greco’s earliest enthusiasts, appreciated that his early works were influenced by Titian and Tintoretto but dismissed his later works as the ‘degenerate product of a pathological genius.’ Nevertheless, Justi would describe El Greco as ‘in fact a prophet of Modernism’.<br>Later, the Spanish artists Ignacio Zuloaga and Santiago Rusiñol championed El Greco’s work and arranged for the monument in his honour on the promenade in Sitges in 1894. More importantly for the role of El Greco in the development of Modernism was Zuloaga’s purchase of <i>The Opening of the Fifth Seal </i>(New York, Metropolitan Museum), a work seen by the young Pablo Picasso in Zuloaga’s studio in Paris in 1905 and which profoundly influenced the conception of Picasso’s landmark work <i>Les Demoiselles d’Avignon </i>(New York, Museum of Modern Art). <br>In fact, Picasso had clearly taken note of his Spanish forebear’s significance much earlier. In the autumn of 1897, the young artist moved to Madrid to study at the Real Academia de Bellas Artes de San Fernando but soon abandoned the school’s teaching methods and decided to train himself, learning directly from his study of masterpieces at the Museo Nacional del Prado. Picasso’s earliest encounters with El Greco’s work in the Prado is recorded in a letter to his friend Joaquim Bas, in which he wrote: ‘The museum of paintings is very nice indeed: Velázquez is first rate; El Greco has some magnificent heads.’ This early admiration for the Cretan’s portraiture is evident from the 1899 drawing entitled <i>Yo El Greco</i>, and from Picasso’s haunting <i>Portrait of an unknown man</i>, after El Greco, painted in <i>circa </i>1899 and now in the Museu Picasso, Barcelona (fig. 4). Of this artistic dependence, in 1912, Paul Ferdinand Schmidt commented: ‘He [Picasso] was a portraitist of tragic significance and it is no accident that a Greco hangs in the same gallery as they share that Spanish sense of isolation, the gloom, the brooding feeling, and a sense of metaphysical with the perfect beauty of their paintings. Even if their means and goals are infinitely diverse: the Greek Spaniard and the Spanish Frenchman ‘shake hands across the centuries’.<br>Picasso told his dealer Daniel-Henry Kahnweiler that what attracted him most to El Greco were his portraits and this enduring influence is apparent in later works such as the <i>Portrait of a painter</i>, <i>after El Greco</i><i>, </i>executed in 1950 and based on the Cretan’s portrait of his son and collaborator Jorge Manuel Theotocópuli (1597–1603; Seville, Museo de Bellas Artes). El Greco’s portraits, which have captivated his fellow artists since his early years in Italy, cast a long shadow over portraiture throughout the twentieth century, informing the work of other pioneering figures including Egon Schiele, Amedeo Modigliani (fig. 5) and Alberto Giacometti.
+                            </div>
+                        </chr-readmore-expander>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    window.chrComponents.articlesNext = {"data":{"settings":{"page_size":{"xs":4,"lg":8},"initial_page_size":{"xs":4,"lg":4},"story_detail_url_pattern":"https://www.christies.com/en/stories/{storySlug}-{id}"},"get_articles_api_endpoint":{"url":"https://apim.christies.com/stories","path":"/type/lots","method":"GET","parameters":{"ids":"20055.5","count":"4","device_size":"","language":"en","offset":"0"},"headers":{"Accept":"application/vnd.christies.v2+json"},"timeout_ms":"8000"}},"labels":{"view_all_txt":"View all","load_more_txt":"Load more","aria_loading_more_in_progress_txt":"Loading more items","aria_loading_more_done_plural_txt":"{count} new items loaded","aria_loading_more_done_singular_txt":"{count} new item loaded","aria_loading_txt":"The component is loading","slow_loading_txt":"Loading time is slower than expected","error_message":"Sorry, we are unable to display this content. Please check your connection."}};
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <chr-panel-magazine-section section-class-names="chr-lot-section__center col-12 col-lg-10 offset-lg-2" id="single-article">
+            <chr-panel-magazine full-width="true" heading="Related articles" namespace="articlesNext" />
+        </chr-panel-magazine-section>
+    </div>
+</div>
+
+
+
+
+    <div class="container-fluid chr-lot-page__more-from">
+        <section data-scroll-section="More from" id="more-from" data-analytics-region="lot:more from" class="row chr-curated-lot-list">
+            <div class="col-12 col-lg-10 offset-lg-2" id="more-lots">
+                <div class="mb-2 pr-4 pr-lg-8 d-flex justify-content-between">
+                    <div>
+                        <h2 class="chr-heading-l-serif">
+                            <span class="chr-label-medium d-block">More from</span>
+                            Old Masters Evening Sale
+                        </h2>
+                    </div>
+                        <div class="d-none d-md-flex align-items-center">
+                                <chr-button href="https://www.christies.com/en/auction/old-masters-evening-sale-29200/" type="icon" icon="arrow" icon-position="right" icon-rotation="180">
+        View All
+    </chr-button>
+
+                        </div>
+                </div>
+                    <script>
+        window.chrComponents = window.chrComponents || {};
+        window.chrComponents.carousel_677142815 = {"data":{},"labels":{"item_current_of_total_txt":"Item {current} out of {total}","previous_txt":"Visually slide to previous slide button","next_txt":"Visually slide to next slide button"}};
+        window.chrComponents.moreFrom = {"data":{"lots":[{"object_id":"6350106","lot_id_txt":"6","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/emanuel-de-witte-alkmaar-c-1617-16912-amsterdam-6350106/?intObjectID=6350106&lid=1","title_primary_txt":"EMANUEL DE WITTE (ALKMAAR C. 1617-1691/2 AMSTERDAM)\n","title_secondary_txt":"Interior of the Oude Kerk, Amsterdam, with a trompe l'oeil curtain and frame\n","title_tertiary_txt":"","consigner_information":"PROPERTY RESTITUTED TO THE HEIRS TO THE COLLECTION OF JULIUS AND CAMILLA PRIESTER","description_txt":"emanuel de witte (alkmaar c. 1617-1691/2 amsterdam), interior of the oude kerk, amsterdam, with a trompe l'oeil curtain and frame, oil on canvas, 31 3&#x2044;4 x 36 1&#x2044;4 in. (80.5 x 92.5 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0006_000(emanuel_de_witte_interior_of_the_oude_kerk_amsterdam_with_a_trompe_loe_d6350106054044).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0006_000(emanuel_de_witte_interior_of_the_oude_kerk_amsterdam_with_a_trompe_loe_d6350106054044).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0006_000(emanuel_de_witte_interior_of_the_oude_kerk_amsterdam_with_a_trompe_loe_d6350106054044).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0006_000(emanuel_de_witte_interior_of_the_oude_kerk_amsterdam_with_a_trompe_loe_d6350106054044).jpg?mode=max","image_alt_text":"EMANUEL DE WITTE (ALKMAAR C. 1617-1691/2 AMSTERDAM)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"500000.00","estimate_high":"800000.00","estimate_txt":"GBP 500,000 – GBP 800,000","price_realised":"500,000","price_realised_txt":"GBP 500,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.6"},{"object_id":"6350107","lot_id_txt":"7","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/karel-du-jardin-amsterdam-1626-1678-venice-the-6350107/?intObjectID=6350107&lid=1","title_primary_txt":"KAREL DU JARDIN (AMSTERDAM 1626-1678 VENICE)\n","title_secondary_txt":"The Wandering Musician\n","title_tertiary_txt":"","consigner_information":"PROPERTY OF THE 6TH EARL OF STRAFFORD WILL TRUST","description_txt":"karel du jardin (amsterdam 1626-1678 venice), the wandering musician, indistinctly signed 'k· dv· iardin· fe' (lower left, on the door), oil on panel, 12 1&#x2044;8 x 14 3&#x2044;8 in. (30.7 x 36.5 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0007_000(karel_du_jardin_the_wandering_musician_d6350107054224).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0007_000(karel_du_jardin_the_wandering_musician_d6350107054224).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0007_000(karel_du_jardin_the_wandering_musician_d6350107054224).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0007_000(karel_du_jardin_the_wandering_musician_d6350107054224).jpg?mode=max","image_alt_text":"KAREL DU JARDIN (AMSTERDAM 1626-1678 VENICE)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"40000.00","estimate_high":"60000.00","estimate_txt":"GBP 40,000 – GBP 60,000","price_realised":"87,500","price_realised_txt":"GBP 87,500","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.7"},{"object_id":"6350108","lot_id_txt":"8","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/nicolaes-berchem-haarlem-1621-1683-amsterdam-an-italienate-6350108/?intObjectID=6350108&lid=1","title_primary_txt":"NICOLAES BERCHEM (HAARLEM 1621-1683 AMSTERDAM)\n","title_secondary_txt":"An Italienate landscape with drovers\n","title_tertiary_txt":"","consigner_information":"PROPERTY OF THE 6TH EARL OF STRAFFORD WILL TRUST","description_txt":"nicolaes berchem (haarlem 1621-1683 amsterdam), an italienate landscape with drovers, signed 'berchem' (lower left), oil on panel, 14 1&#x2044;4 x 18 1&#x2044;4 in. (36.2 x 46.3 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0008_000(nicolaes_berchem_an_italienate_landscape_with_drovers054421).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0008_000(nicolaes_berchem_an_italienate_landscape_with_drovers054421).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0008_000(nicolaes_berchem_an_italienate_landscape_with_drovers054421).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0008_000(nicolaes_berchem_an_italienate_landscape_with_drovers054421).jpg?mode=max","image_alt_text":"NICOLAES BERCHEM (HAARLEM 1621-1683 AMSTERDAM)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"40000.00","estimate_high":"60000.00","estimate_txt":"GBP 40,000 – GBP 60,000","price_realised":"68,750","price_realised_txt":"GBP 68,750","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.8"},{"object_id":"6350109","lot_id_txt":"9","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/jan-josefsz-van-goyen-leiden-1596-1656-the-6350109/?intObjectID=6350109&lid=1","title_primary_txt":"JAN JOSEFSZ. VAN GOYEN (LEIDEN 1596-1656 THE HAGUE)\n","title_secondary_txt":"River landscape with travellers at an inn at sunset\n","title_tertiary_txt":"","consigner_information":"PROPERTY FROM THE COLLECTION OF JACQUES GOUDSTIKKER","description_txt":"jan josefsz. van goyen (leiden 1596-1656 the hague), river landscape with travellers at an inn at sunset, signed with the artist's monogram and dated 'vg 1651' (centre right), oil on panel, 18 5&#x2044;8 x 26 in. (47.3 x 66.1 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0009_000(jan_josefsz_van_goyen_river_landscape_with_travellers_at_an_inn_at_sun074720).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0009_000(jan_josefsz_van_goyen_river_landscape_with_travellers_at_an_inn_at_sun074720).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0009_000(jan_josefsz_van_goyen_river_landscape_with_travellers_at_an_inn_at_sun074720).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0009_000(jan_josefsz_van_goyen_river_landscape_with_travellers_at_an_inn_at_sun074720).jpg?mode=max","image_alt_text":"JAN JOSEFSZ. VAN GOYEN (LEIDEN 1596-1656 THE HAGUE)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"50000.00","estimate_high":"70000.00","estimate_txt":"GBP 50,000 – GBP 70,000","price_realised":"81,250","price_realised_txt":"GBP 81,250","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.9"},{"object_id":"6350110","lot_id_txt":"10","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/jan-steen-leiden-1626-1679-christ-in-the-6350110/?intObjectID=6350110&lid=1","title_primary_txt":"JAN STEEN (LEIDEN 1626-1679)\n","title_secondary_txt":"Christ in the House of Mary and Martha\n","title_tertiary_txt":"","consigner_information":"Property of a Trust","description_txt":"jan steen (leiden 1626-1679), christ in the house of mary and martha, signed 'jsteen' ('js' in ligature, lower left), oil on panel, 29 x 29 1&#x2044;2 in. (73.7 x 74.9 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0010_000(jan_steen_christ_in_the_house_of_mary_and_martha054914).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0010_000(jan_steen_christ_in_the_house_of_mary_and_martha054914).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0010_000(jan_steen_christ_in_the_house_of_mary_and_martha054914).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0010_000(jan_steen_christ_in_the_house_of_mary_and_martha054914).jpg?mode=max","image_alt_text":"JAN STEEN (LEIDEN 1626-1679)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"100000.00","estimate_high":"150000.00","estimate_txt":"GBP 100,000 – GBP 150,000","price_realised":"125,000","price_realised_txt":"GBP 125,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.10"},{"object_id":"6350113","lot_id_txt":"13","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/john-constable-ra-east-bergholt-1776-1837-london-6350113/?intObjectID=6350113&lid=1","title_primary_txt":"JOHN CONSTABLE, R.A. (EAST BERGHOLT 1776-1837 LONDON)\n","title_secondary_txt":"Woodland landscape\n","title_tertiary_txt":"","consigner_information":"PROPERTY FROM A PRIVATE COLLECTION","description_txt":"john constable, r.a. (east bergholt 1776-1837 london), woodland landscape, oil on board, 14 3&#x2044;4 x 24 3&#x2044;4 in. (37.5 x 63 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0013_000(john_constable_ra_woodland_landscape055434).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0013_000(john_constable_ra_woodland_landscape055434).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0013_000(john_constable_ra_woodland_landscape055434).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0013_000(john_constable_ra_woodland_landscape055434).jpg?mode=max","image_alt_text":"JOHN CONSTABLE, R.A. (EAST BERGHOLT 1776-1837 LONDON)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"150000.00","estimate_high":"250000.00","estimate_txt":"GBP 150,000 – GBP 250,000","price_realised":"175,000","price_realised_txt":"GBP 175,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.13"},{"object_id":"6350116","lot_id_txt":"16","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/pieter-snayers-antwerp-1592-1667-brussels-the-siege-6350116/?intObjectID=6350116&lid=1","title_primary_txt":"PIETER SNAYERS (ANTWERP 1592-1667 BRUSSELS)\n","title_secondary_txt":"The Siege of Diksmuide; and The Siege of Armentières with a rainbow\n","title_tertiary_txt":"","consigner_information":"<sup>THE ECLECTIC EYE. PROPERTY FROM A DISTINGUISHED EUROPEAN COLLECTOR </sup>","description_txt":"pieter snayers (antwerp 1592-1667 brussels), the siege of diksmuide; and the siege of armentières with a rainbow, oil on canvas, 41 1&#x2044;8 x 53 1&#x2044;2 in. (104.5 x 136 cm.), (2)a pair","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0016_000(pieter_snayers_the_siege_of_diksmuide_and_the_siege_of_armentieres_wit_d6350116052628).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0016_000(pieter_snayers_the_siege_of_diksmuide_and_the_siege_of_armentieres_wit_d6350116052628).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0016_000(pieter_snayers_the_siege_of_diksmuide_and_the_siege_of_armentieres_wit_d6350116052628).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0016_000(pieter_snayers_the_siege_of_diksmuide_and_the_siege_of_armentieres_wit_d6350116052628).jpg?mode=max","image_alt_text":"PIETER SNAYERS (ANTWERP 1592-1667 BRUSSELS)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"150000.00","estimate_high":"250000.00","estimate_txt":"GBP 150,000 – GBP 250,000","price_realised":"175,000","price_realised_txt":"GBP 175,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.16"},{"object_id":"6350117","lot_id_txt":"17","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/pieter-brueghel-the-younger-brussels-1564-1638-antwerp-6350117/?intObjectID=6350117&lid=1","title_primary_txt":"PIETER BRUEGHEL THE YOUNGER (BRUSSELS 1564-1638 ANTWERP)\n","title_secondary_txt":"The Massacre of the Innocents\n","title_tertiary_txt":"","consigner_information":"<sup>THE ECLECTIC EYE. PROPERTY FROM A DISTINGUISHED EUROPEAN COLLECTOR </sup>","description_txt":"pieter brueghel the younger (brussels 1564-1638 antwerp), the massacre of the innocents, oil on panel, marouflaged, 47 1&#x2044;4 x 65 3&#x2044;8 in. (120 x 166 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0017_000(pieter_brueghel_the_younger_the_massacre_of_the_innocents_d6350117060356).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0017_000(pieter_brueghel_the_younger_the_massacre_of_the_innocents_d6350117060356).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0017_000(pieter_brueghel_the_younger_the_massacre_of_the_innocents_d6350117060356).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0017_000(pieter_brueghel_the_younger_the_massacre_of_the_innocents_d6350117060356).jpg?mode=max","image_alt_text":"PIETER BRUEGHEL THE YOUNGER (BRUSSELS 1564-1638 ANTWERP)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"1000000.00","estimate_high":"1500000.00","estimate_txt":"GBP 1,000,000 – GBP 1,500,000","price_realised":"2,422,500","price_realised_txt":"GBP 2,422,500","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.17"},{"object_id":"6350118","lot_id_txt":"18","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/attributed-to-jan-breughel-the-elder-brussels-6350118/?intObjectID=6350118&lid=1","title_primary_txt":"ATTRIBUTED TO JAN BREUGHEL THE ELDER (BRUSSELS 1568-1625 ANTWERP)\n","title_secondary_txt":"The Last Judgment\n","title_tertiary_txt":"","consigner_information":"","description_txt":"attributed to jan breughel the elder (brussels 1568-1625 antwerp), the last judgment, oil on copper, unframed, 10 3&#x2044;4 x 14 1&#x2044;2 in. (27.4 x 36.5 cm.), with the panel maker's mark of pieter staas (centre, to the reverse)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0018_000(attributed_to_jan_breughel_the_elder_the_last_judgment060400).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0018_000(attributed_to_jan_breughel_the_elder_the_last_judgment060400).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0018_000(attributed_to_jan_breughel_the_elder_the_last_judgment060400).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0018_000(attributed_to_jan_breughel_the_elder_the_last_judgment060400).jpg?mode=max","image_alt_text":"ATTRIBUTED TO JAN BREUGHEL THE ELDER (BRUSSELS 1568-1625 ANTWERP)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"60000.00","estimate_high":"100000.00","estimate_txt":"GBP 60,000 – GBP 100,000","price_realised":"75,000","price_realised_txt":"GBP 75,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.18"},{"object_id":"6350119","lot_id_txt":"19","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/workshop-of-lucas-cranach-the-elder-kronach-6350119/?intObjectID=6350119&lid=1","title_primary_txt":"WORKSHOP OF LUCAS CRANACH THE ELDER (KRONACH 1472-1553 WEIMAR)\n","title_secondary_txt":"A triptych: the central panel: Christ among the Doctors; the wings: The Multiplication of the Loaves and Fishes; and The Marriage at Cana; the outer faces: Saint Elizabeth of Thuringia giving Alms; and The Nativity\n","title_tertiary_txt":"","consigner_information":"PROPERTY FROM A DISTINGUISHED PRIVATE COLLECTION","description_txt":"workshop of lucas cranach the elder (kronach 1472-1553 weimar), a triptych: the central panel: christ among the doctors; the wings: the multiplication of the loaves and fishes; and the marriage at cana; the outer faces: saint elizabeth of thuringia giving alms; and the nativity, oil on panel, the wings in later engaged frames, central panel: 58 1&#x2044;4 x 39 1&#x2044;4 in. (147.8 x 99.8 cm.); wings: 58 1&#x2044;8 x 17 1&#x2044;2 in. (147 x 44.4 cm.) each","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0019_000(workshop_of_lucas_cranach_the_elder_a_triptych_the_central_panel_chris_d6350119060630).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0019_000(workshop_of_lucas_cranach_the_elder_a_triptych_the_central_panel_chris_d6350119060630).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0019_000(workshop_of_lucas_cranach_the_elder_a_triptych_the_central_panel_chris_d6350119060630).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0019_000(workshop_of_lucas_cranach_the_elder_a_triptych_the_central_panel_chris_d6350119060630).jpg?mode=max","image_alt_text":"WORKSHOP OF LUCAS CRANACH THE ELDER (KRONACH 1472-1553 WEIMAR)\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"300000.00","estimate_high":"500000.00","estimate_txt":"GBP 300,000 – GBP 500,000","price_realised":"400,000","price_realised_txt":"GBP 400,000","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.19"},{"object_id":"6350120","lot_id_txt":"20","event_type":"Sale","start_date":"2021-12-07T18:00Z","end_date":"2021-12-07T00:00Z","time_zone":"GMT","is_in_progress":false,"is_auction_over":true,"url":"https://www.christies.com/lot/tuscan-school-15th-century-figures-listening-at-6350120/?intObjectID=6350120&lid=1","title_primary_txt":"TUSCAN SCHOOL, 15TH CENTURY\n","title_secondary_txt":"Figures listening at the door\n","title_tertiary_txt":"","consigner_information":"PROPERTY FROM A DISTINGUISHED PRIVATE COLLECTION","description_txt":"tuscan school, 15th century, figures listening at the door, tempera on panel, 10 3&#x2044;4 x 8 in. (27.2 x 20 cm.)","image":{"image_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0020_000(tuscan_school_15th_century_figures_listening_at_the_door061332).jpg?mode=max","image_mobile_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0020_000(tuscan_school_15th_century_figures_listening_at_the_door061332).jpg?mode=max","image_tablet_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0020_000(tuscan_school_15th_century_figures_listening_at_the_door061332).jpg?mode=max","image_desktop_src":"https://www.christies.com/img/LotImages/2021/CKS/2021_CKS_20055_0020_000(tuscan_school_15th_century_figures_listening_at_the_door061332).jpg?mode=max","image_alt_text":"TUSCAN SCHOOL, 15TH CENTURY\n"},"estimate_visible":true,"estimate_on_request":false,"lot_estimate_txt":"","price_on_request":false,"estimate_low":"30000.00","estimate_high":"50000.00","estimate_txt":"GBP 30,000 – GBP 50,000","price_realised":"47,500","price_realised_txt":"GBP 47,500","current_bid":"","current_bid_txt":"","is_saved":false,"show_save":true,"registration_close_date":"","is_unsold":false,"AlternativeLotId":"20055.20"}],"save_lot_livesale_api_endpoint":{"url":"//www.christies.com","path":"lots_webapi/api/lotslist/SaveLot","method":"POST","parameters":{"object_id":"","apikey":"708878A1-95DB-4DC2-8FBD-1E8A1DCE703C","save":""}}},"labels":{"lot_txt":"Lot","lot_ended_txt":"Lot has ended","current_bid_txt":"Current bid","estimate_txt":"Estimate","estimate_on_request_txt":"Estimate on request","price_on_request_txt":" Price on request","price_realised_txt":"Price realised","currency_txt":"GBP","closed_label_txt":"Lot has ended","save_txt":"Save lot","saved_txt":"Saved lot","follow_txt":"Follow","followed_txt":"Followed","unfollow_txt":"Following","aria_follow_txt":"Follow {lottitle}","aria_unfollow_txt":"Unfollow {lottitle}","aria_expand_content_txt":"Visually expand the content","aria_collapse_content_txt":"Visually collapse the content","closed_txt":"Closed","closing_txt":"Closing","happening_now_txt":"Happening Now","starting_txt":"Starting","days_txt":"days","hours_txt":"h","minutes_txt":"m","seconds_txt":"s","quick_view_txt":"Quick View"}};
+    </script>
+    <chr-panel-curated-lot-list-carousel data-namespace="carousel_677142815"
+                                         lot-data-namespace="moreFrom" is-auction-page="false" display="list"></chr-panel-curated-lot-list-carousel>
+        <div class="d-flex d-md-none justify-content-end mt-5 pr-3">
+                <chr-button href="https://www.christies.com/en/auction/old-masters-evening-sale-29200/" type="icon" icon="arrow" icon-position="right" icon-rotation="180">
+        View All
+    </chr-button>
+
+        </div>
+
+            </div>
+        </section>
+    </div>
+
+       
+</div>
+    </main>
+
+
+
+<script>
+    window.chrComponents = window.chrComponents || {};
+    window.chrComponents.footer = {
+  "data": {
+    "footer": {
+      "language": "en",
+      "main_navigation": [
+        {
+          "title_txt": "Help",
+          "navigation_links": [
+            {
+              "title_txt": "FAQs",
+              "url": "https://www.christies.com/help/frequently-asked-questions/overview",
+              "type": "link",
+              "analytics_id": "footer_faqs"
+            },
+            {
+              "title_txt": "Buying guides ",
+              "url": "https://www.christies.com/en/help/buying-guide/overview",
+              "type": "link",
+              "analytics_id": "footer_buyingguides"
+            },
+            {
+              "title_txt": "Selling guides",
+              "url": "https://www.christies.com/en/help/selling-guide/overview?lid=1&sc_lang=en",
+              "type": "link",
+              "analytics_id": "footer_sellingguides"
+            },
+            {
+              "title_txt": "Get an estimate",
+              "url": "https://www.christies.com/selling-services/auction-services/auction-estimates/overview/",
+              "type": "link",
+              "analytics_id": "footer_getanestimate"
+            },
+            {
+              "title_txt": "Shipping",
+              "url": "https://www.christies.com/buying-services/buying-guide/ship/",
+              "type": "link",
+              "analytics_id": "footer_shipping"
+            },
+            {
+              "title_txt": "Storage",
+              "url": "https://www.cfass.com/",
+              "type": "link",
+              "analytics_id": "footer_storage"
+            }
+          ]
+        },
+        {
+          "title_txt": "About us",
+          "navigation_links": [
+            {
+              "title_txt": "About Christie's",
+              "url": "https://www.christies.com/en/about/overview",
+              "type": "link",
+              "analytics_id": "footer_aboutchristies"
+            },
+            {
+              "title_txt": "Locations",
+              "url": "https://www.christies.com/en/locations/salerooms",
+              "type": "link",
+              "analytics_id": "footer_locations"
+            },
+            {
+              "title_txt": "Press",
+              "url": "https://press.christies.com",
+              "type": "link",
+              "analytics_id": "footer_press"
+            },
+            {
+              "title_txt": "Careers",
+              "url": "https://www.christies.com/about/careers/overview",
+              "type": "link",
+              "analytics_id": "footer_careers"
+            },
+            {
+              "title_txt": "Corporate Social Responsibility",
+              "url": "https://www.christies.com/about-us/corporate-social-responsibility",
+              "type": "link",
+              "analytics_id": "footer_corporatesocialresponsibility"
+            },
+            {
+              "title_txt": "Philanthropy",
+              "url": "https://www.christies.com/about/philanthropy/overview",
+              "type": "link",
+              "analytics_id": "footer_cultureandphilanthropy"
+            },
+            {
+              "title_txt": "Sustainability",
+              "url": "https://www.christies.com/services/sustainability/overview",
+              "type": "link",
+              "analytics_id": "footer_sustainability"
+            },
+            {
+              "title_txt": "Expanding Scholarship",
+              "url": "https://www.christies.com/en/about/expanding-scholarship",
+              "type": "link",
+              "analytics_id": "footer_expandingscholarship"
+            }
+          ]
+        },
+        {
+          "title_txt": "Services",
+          "navigation_links": [
+            {
+              "title_txt": "Art Finance",
+              "url": "https://www.christies.com/en/services/christies-art-finance",
+              "type": "link",
+              "analytics_id": "footer_artfinance"
+            },
+            {
+              "title_txt": "Private Sales",
+              "url": "https://www.christies.com/en/private-sales/whats-on-offer",
+              "type": "link",
+              "analytics_id": "footer_privatesales"
+            },
+            {
+              "title_txt": "Client Advisory",
+              "url": "https://www.christies.com/en/services/client-advisory",
+              "type": "link",
+              "analytics_id": "footer_bespokeclients"
+            },
+            {
+              "title_txt": "Trusts, Estates & Appraisals (Americas)",
+              "url": "https://www.christies.com/en/services/trusts-and-estates",
+              "type": "link",
+              "analytics_id": "footer_trustandestatesmanagement"
+            },
+            {
+              "title_txt": "Estates, Appraisals & Valuations (UK & Europe)",
+              "url": "https://www.christies.com/en/services/estates-appraisals-valuations",
+              "type": "link",
+              "analytics_id": "footer_estateappraisalsandvaluations"
+            },
+            {
+              "title_txt": "Heritage & Taxation",
+              "url": "https://www.christies.com/en/services/heritage-and-taxation-advisory-service",
+              "type": "link",
+              "analytics_id": "footer_heritageandtaxationservice"
+            },
+            {
+              "title_txt": "Museum and Corporate Collections",
+              "url": "https://www.christies.com/services/museum-and-corporate-collection-services/overview",
+              "type": "link",
+              "analytics_id": "footer_museumandcorporatecollections"
+            },
+            {
+              "title_txt": "Restitution",
+              "url": "https://www.christies.com/services/restitution/overview",
+              "type": "link",
+              "analytics_id": "footer_restitution"
+            }
+          ]
+        }
+      ],
+      "bottom_navigation": [
+        {
+          "navigation_links": [
+            {
+              "title_txt": "Terms and conditions",
+              "url": "https://www.christies.com/about/terms-and-conditions/terms-and-conditions-for-website-use",
+              "type": "link",
+              "analytics_id": "footer_termsandconditions"
+            },
+            {
+              "title_txt": "Privacy",
+              "url": "https://www.christies.com/about-us/welcome-to-christies/privacy",
+              "type": "link",
+              "analytics_id": "footer_privacy"
+            },
+            {
+              "title_txt": "Security",
+              "url": "https://www.christies.com/en/privacy-centre/security/overview",
+              "type": "link",
+              "analytics_id": "footer_security"
+            },
+            {
+              "title_txt": "Cookie settings",
+              "url": "",
+              "type": "cookie",
+              "analytics_id": "footer_cookiesettings"
+            },
+            {
+              "title_txt": "Do not sell my personal information",
+              "url": "https://www.christies.com/about-us/contact/ccpa",
+              "type": "link",
+              "analytics_id": "footer_donotsellmypersonalinfo"
+            },
+            {
+              "title_txt": "Modern slavery statement",
+              "url": "/-/media/project/christies-discovery/discovery-website/about-us/corporate-governance/modern-slavery-statements/modern-slavery-act-statement-2023.pdf?rev=5f3414762df646e6a2c2cb8c58a7fa42",
+              "type": "link",
+              "analytics_id": "footer_modernslaverystatement"
+            }
+          ]
+        },
+        {
+          "navigation_links": [
+            {
+              "title_txt": "Christie's Education",
+              "url": "https://education.christies.com/?sc_lang=en",
+              "type": "link",
+              "analytics_id": "footer_christieseducation"
+            },
+            {
+              "title_txt": "Christie's Real Estate",
+              "url": "https://www.christiesrealestate.com/?sc_lang=en&lid=1",
+              "type": "link",
+              "analytics_id": "footer_christiesrealestate"
+            }
+          ]
+        }
+      ],
+      "social_links": [
+        {
+          "icon": "x",
+          "url": "https://x.com/christiesinc",
+          "type": "link",
+          "analytics_id": "footer_x"
+        },
+        {
+          "icon": "facebook",
+          "url": "https://www.facebook.com/Christies",
+          "type": "link",
+          "analytics_id": "footer_facebook"
+        },
+        {
+          "icon": "instagram",
+          "url": "https://www.instagram.com/christiesinc",
+          "type": "link",
+          "analytics_id": "footer_instagram"
+        },
+        {
+          "icon": "pinterest",
+          "url": "https://pinterest.com/christiesinc/",
+          "type": "link",
+          "analytics_id": "footer_pinterest"
+        },
+        {
+          "icon": "wechat",
+          "url": "https://www.christies.com/-/media/project/christies-discovery/discovery-website/footer/subscription-account-qrcode.jpg?as=0&dmc=0&iar=0&thn=0&udi=0&rev=4738807303744fd2a0eae4a1b94b1e28",
+          "type": "qr",
+          "modal_title_txt": "Scan me...",
+          "modal_description_txt": "Start using WeChat by scanning the following QR code.",
+          "analytics_id": "footer_wechat"
+        },
+        {
+          "icon": "weibo",
+          "url": "https://weibo.com/christies?ssl_rnd=1610476413.9034",
+          "type": "link",
+          "analytics_id": "footer_weibo"
+        },
+        {
+          "icon": "youtube",
+          "url": "https://www.youtube.com/channel/UCSbY5GF1eSKtT6d32qC7Krw",
+          "type": "link",
+          "analytics_id": "footer_youtube"
+        }
+      ],
+      "copyright_txt": "Christie's 2024"
+    }
+  },
+  "labels": {
+    "aria_footer_navigation_txt": "Site",
+    "aria_footer_secondary_nav_txt": "Site secondary",
+    "aria_social_media_list_txt": "Social media",
+    "footer_license_logo_txt": "ICP license logo"
+  }
+};
+</script>
+
+<div class="chr-header-footer">
+    <chr-footer data-namespace="footer"></chr-footer>
+</div>
+        
+
+
+    <script src="https://dsl.assets.christies.com/design-system-library/production/mtiFontTrackingCode.min.js" async></script>
+
+
+
+
+<script type="text/javascript" src="/Build/scripts/v3/global-bundle.min.js?hash=-1820964216" defer></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<link href="/css/FastSignup.css?hash=-1820964216" rel="stylesheet" type="text/css" fetchpriority="low" />
+<script src="/js/LoadFastSignUp.js?hash=-1820964216" defer></script>
+
+            <div class="chr-header-footer">
+        <chr-gallery-provider></chr-gallery-provider>
+        <chr-modal-provider></chr-modal-provider>
+    </div>
+
+    </body>
+</html>
