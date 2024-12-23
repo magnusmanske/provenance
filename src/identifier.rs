@@ -23,8 +23,14 @@ impl IdText {
     }
 
     pub fn new_text(text: &str) -> Self {
+        let id = if text.to_lowercase().trim() == "gestapo" {
+            Some(Identifier::WikidataItem("Q43250".to_string()))
+        } else {
+            None
+        };
+
         Self {
-            id: None,
+            id,
             text: Some(text.to_string()),
         }
     }
