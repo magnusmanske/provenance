@@ -5,8 +5,6 @@ edition = "2021"
 
 [dependencies]
 anyhow = "*"
-serde = { version = "*", features = ["derive"] }
-serde_json = "*"
 scraper = "*"
 chrono = { version = "*", features = ["serde"] }
 regex = "*"
@@ -14,3 +12,10 @@ lazy_static = "*"
 regex-split = "*"
 csv = "*"
 rayon = "*"
+tokio = { version = "1", features = ["full"] }
+axum = { version = "*", features = ["tokio", "http1"] }
+axum-server = "*"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tower = "*"
+tower-http = { version = "*", features = ["fs", "trace"] }
